@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:folio/configs/configs.dart';
-import 'package:folio/constants.dart';
 import 'package:folio/provider/app_provider.dart';
-
+import 'package:folio/utils/utils.dart';
 import 'package:provider/provider.dart';
 
 class ProjectCard extends StatefulWidget {
@@ -26,7 +25,7 @@ class ProjectCard extends StatefulWidget {
   ProjectCardState createState() => ProjectCardState();
 }
 
-class ProjectCardState extends State<ProjectCard> {
+class ProjectCardState extends State<ProjectCard> with Utils {
   bool isHover = false;
 
   @override
@@ -150,7 +149,7 @@ class ProjectCardState extends State<ProjectCard> {
                     ? Image.asset(
                         widget.banner!,
                       )
-                    : Container(),
+                    : const SizedBox.shrink(),
               ),
             ),
           ],

@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:folio/configs/configs.dart';
 import 'package:folio/constants.dart';
 import 'package:folio/utils/about_utils.dart';
-
 import 'package:folio/utils/utils.dart';
 import 'package:folio/utils/work_utils.dart';
 import 'package:folio/widget/about_me_data.dart';
 import 'package:folio/widget/community_button.dart';
 import 'package:folio/widget/custom_text_heading.dart';
 import 'package:folio/widget/tech_widget.dart';
-
 import 'package:universal_html/html.dart' as html;
 
 class AboutDesktop extends StatelessWidget {
@@ -28,14 +26,14 @@ class AboutDesktop extends StatelessWidget {
             text: '\nAbout Me',
           ),
           const CustomSectionSubHeading(
-            text: 'Get to know me :)',
+            text: 'Have a fun life',
           ),
           Space.y1!,
           Row(
             children: [
               Expanded(
                 child: Image.asset(
-                  StaticUtils.coloredPhoto,
+                  StaticUtils.avatar1,
                   height: height * 0.7,
                 ),
               ),
@@ -46,12 +44,6 @@ class AboutDesktop extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Who am I?',
-                        style: AppText.b1!.copyWith(
-                          color: AppTheme.c!.primary,
-                        ),
-                      ),
                       Space.y1!,
                       Text(
                         AboutUtils.aboutMeHeadline,
@@ -102,11 +94,11 @@ class AboutDesktop extends StatelessWidget {
                             children: const [
                               AboutMeData(
                                 data: "Name",
-                                information: "Muhammad Hamza",
+                                information: "Nguyen Quyen Anh",
                               ),
                               AboutMeData(
                                 data: "Age",
-                                information: "24",
+                                information: "30",
                               ),
                             ],
                           ),
@@ -116,11 +108,11 @@ class AboutDesktop extends StatelessWidget {
                             children: const [
                               AboutMeData(
                                 data: "Email",
-                                information: "hamza.6.shakeel@gmail.com",
+                                information: "anh.nguyenquyen93@gmail.com",
                               ),
                               AboutMeData(
                                 data: "From",
-                                information: "Attock, PK",
+                                information: "Hanoi, Vietnam",
                               ),
                             ],
                           ),

@@ -1,10 +1,12 @@
+import 'dart:developer';
+
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:folio/animations/entrance_fader.dart';
 import 'package:folio/configs/configs.dart';
-
 import 'package:folio/utils/utils.dart';
 import 'package:folio/widget/social_links.dart';
+import 'package:universal_platform/universal_platform.dart';
 
 class HomeDesktop extends StatelessWidget {
   const HomeDesktop({Key? key}) : super(key: key);
@@ -12,6 +14,7 @@ class HomeDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    log(UniversalPlatform.isAndroid.toString());
 
     return Container(
       height: size.height * 1.025,
@@ -28,7 +31,7 @@ class HomeDesktop extends StatelessWidget {
                 delay: const Duration(seconds: 1),
                 duration: const Duration(milliseconds: 800),
                 child: Image.asset(
-                  StaticUtils.blackWhitePhoto,
+                  StaticUtils.avatar,
                   height: size.width < 1200
                       ? size.height * 0.8
                       : size.height * 0.85,
@@ -50,8 +53,8 @@ class HomeDesktop extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      'WELCOME TO MY PORTFOLIO! ',
-                      style: AppText.b1!.copyWith(
+                      'Hello World! ',
+                      style: AppText.b1?.copyWith(
                         fontFamily: 'Montserrat',
                       ),
                     ),
@@ -68,16 +71,16 @@ class HomeDesktop extends StatelessWidget {
                 ),
                 Space.y1!,
                 Text(
-                  "Muhammad",
-                  style: AppText.h1!.copyWith(
+                  "Nguyen",
+                  style: AppText.h1?.copyWith(
                     fontFamily: 'Montserrat',
                     fontSize: AppDimensions.normalize(25),
                     fontWeight: FontWeight.w100,
                   ),
                 ),
                 Text(
-                  "Hamza",
-                  style: AppText.h1b!.copyWith(
+                  "Quyen Anh",
+                  style: AppText.h1b?.copyWith(
                     fontSize: AppDimensions.normalize(25),
                     height: 1,
                   ),
@@ -90,22 +93,22 @@ class HomeDesktop extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.play_arrow_rounded,
-                        color: AppTheme.c!.primary!,
+                        color: AppTheme.c?.primary,
                       ),
                       AnimatedTextKit(
                         animatedTexts: [
                           TyperAnimatedText(
-                            ' Flutter Developer',
+                            ' Mobile Developer',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),
                           TyperAnimatedText(
-                            ' UI/UX Enthusiast',
+                            ' PM Enthusiast',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),
                           TyperAnimatedText(
-                            ' A friend :)',
+                            ' Nice to meet you!',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),

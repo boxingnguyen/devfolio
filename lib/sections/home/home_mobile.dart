@@ -1,7 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:folio/configs/configs.dart';
-
 import 'package:folio/utils/utils.dart';
 import 'package:folio/widget/social_links.dart';
 
@@ -22,7 +21,7 @@ class HomeMobile extends StatelessWidget {
             child: Opacity(
               opacity: 0.9,
               child: Image.asset(
-                StaticUtils.blackWhitePhoto,
+                StaticUtils.avatar,
                 height: AppDimensions.normalize(150),
               ),
             ),
@@ -41,7 +40,7 @@ class HomeMobile extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "HEY THERE! ",
+                      "Hello World! ",
                       style: AppText.b2!.copyWith(
                         fontFamily: 'Montserrat',
                       ),
@@ -55,14 +54,14 @@ class HomeMobile extends StatelessWidget {
                 ),
                 Space.y!,
                 Text(
-                  "Muhammad",
+                  "Nguyen ",
                   style: AppText.h3!.copyWith(
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w100,
                   ),
                 ),
                 Text(
-                  "Hamza",
+                  "Quyen Anh",
                   style: AppText.h3b!.copyWith(
                     height: 1,
                   ),
@@ -82,12 +81,12 @@ class HomeMobile extends StatelessWidget {
                           textStyle: AppText.b1,
                         ),
                         TyperAnimatedText(
-                          ' UI/UX Enthusiast',
+                          ' PM Enthusiast',
                           speed: const Duration(milliseconds: 50),
                           textStyle: AppText.b1,
                         ),
                         TyperAnimatedText(
-                          ' A friend :)',
+                          ' Nice to meet you!',
                           speed: const Duration(milliseconds: 50),
                           textStyle: AppText.b1,
                         ),

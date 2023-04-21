@@ -1,19 +1,17 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:folio/configs/configs.dart';
+import 'package:folio/constants.dart';
 import 'package:folio/utils/about_utils.dart';
 import 'package:folio/utils/utils.dart';
 import 'package:folio/utils/work_utils.dart';
-
-import 'package:folio/widget/custom_text_heading.dart';
-import 'package:universal_html/html.dart' as html;
-
-import 'package:flutter/material.dart';
-import 'package:folio/constants.dart';
 import 'package:folio/widget/about_me_data.dart';
 import 'package:folio/widget/community_button.dart';
+import 'package:folio/widget/custom_text_heading.dart';
 import 'package:folio/widget/tech_widget.dart';
+import 'package:universal_html/html.dart' as html;
 
-class AboutMobile extends StatelessWidget {
+class AboutMobile extends StatelessWidget with Utils {
   const AboutMobile({Key? key}) : super(key: key);
 
   @override
@@ -28,7 +26,7 @@ class AboutMobile extends StatelessWidget {
             text: '\nAbout Me',
           ),
           const CustomSectionSubHeading(
-            text: 'Get to know me :)',
+            text: 'Have a fun life',
           ),
           Space.y1!,
           Image.asset(
@@ -37,15 +35,6 @@ class AboutMobile extends StatelessWidget {
           ),
           SizedBox(
             height: height * 0.03,
-          ),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              "Who am I?",
-              style: AppText.b2!.copyWith(
-                color: AppTheme.c!.primary,
-              ),
-            ),
           ),
           Space.y1!,
           Text(
@@ -96,11 +85,11 @@ class AboutMobile extends StatelessWidget {
           ),
           const AboutMeData(
             data: "Name",
-            information: "Muhammad Hamza",
+            information: "Nguyen Quyen Anh",
           ),
           const AboutMeData(
             data: "Email",
-            information: "hamza.6.shakeel@gmail.com",
+            information: "anh.nguyenquyen93@gmail.com",
           ),
           Space.y!,
           OutlinedButton(

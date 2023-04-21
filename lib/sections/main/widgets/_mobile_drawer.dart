@@ -1,6 +1,6 @@
 part of '../main_section.dart';
 
-class _MobileDrawer extends StatelessWidget {
+class _MobileDrawer extends StatelessWidget with Utils {
   const _MobileDrawer({Key? key}) : super(key: key);
 
   @override

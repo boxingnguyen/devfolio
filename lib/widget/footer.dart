@@ -1,7 +1,9 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:folio/constants.dart';
 
-class Footer extends StatelessWidget {
+import '../utils/utils.dart';
+
+class Footer extends StatelessWidget with Utils {
   const Footer({Key? key}) : super(key: key);
 
   @override
@@ -13,19 +15,44 @@ class Footer extends StatelessWidget {
       height: height * 0.07,
       width: width,
       child: Center(
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
+        child: Column(
           children: [
-            const Text(
-              "Developed in 💙 with ",
-            ),
-            InkWell(
-              onTap: () => openURL("https://github.com/mhmzdev/DevFolio"),
-              child: const Text(
-                "Flutter",
-                style: TextStyle(color: Colors.blue),
+            RichText(
+              text: TextSpan(
+                text: 'Developed by ',
+                style: DefaultTextStyle.of(context).style,
+                children: [
+                  TextSpan(
+                      text: 'Flutter ',
+                      style: const TextStyle(color: Colors.blue),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () => openURL("https://flutter.dev/")),
+                  const TextSpan(text: 'with '),
+                  const TextSpan(
+                    text: '💙',
+                    style: TextStyle(color: Colors.red),
+                  ),
+                ],
               ),
-            )
+            ),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Text(
+                  "Inspired by ",
+                ),
+                InkWell(
+                  onTap: () => openURL("https://github.com/mhmzdev/DevFolio"),
+                  child: const Text(
+                    "Hamza ",
+                    style: TextStyle(color: Colors.blue),
+                  ),
+                ),
+                const InkWell(
+                  child: Text("with respect."),
+                )
+              ],
+            ),
           ],
         ),
       ),

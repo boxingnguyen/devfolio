@@ -1,6 +1,6 @@
 part of '../services.dart';
 
-class _ServiceCardBackWidget extends StatelessWidget {
+class _ServiceCardBackWidget extends StatelessWidget with Utils {
   const _ServiceCardBackWidget(
       {Key? key, required this.serviceDesc, required this.serviceTitle})
       : super(key: key);
@@ -46,7 +46,7 @@ class _ServiceCardBackWidget extends StatelessWidget {
                           MaterialButton(
                             height: 40.0,
                             onPressed: () => openURL(
-                              'https://api.whatsapp.com/send?phone=923460159889',
+                              'https://api.whatsapp.com/send?phone=84338305895',
                             ),
                             color: const Color(0xff34CB62),
                             child: Row(
@@ -70,7 +70,7 @@ class _ServiceCardBackWidget extends StatelessWidget {
                           MaterialButton(
                             height: 40.0,
                             onPressed: () => openURL(
-                              'https://www.upwork.com/freelancers/~0197b0f6aaeba9675f',
+                              'https://www.upwork.com/freelancers/~01b758793639509668',
                             ),
                             color: const Color(0xff13A800),
                             child: Row(

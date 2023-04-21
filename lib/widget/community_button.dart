@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:folio/configs/configs.dart';
-import 'package:folio/constants.dart';
 
-class CommunityIconBtn extends StatelessWidget {
+import '../utils/utils.dart';
+
+class CommunityIconBtn extends StatelessWidget with Utils {
   final String icon;
   final String link;
   final double height;
