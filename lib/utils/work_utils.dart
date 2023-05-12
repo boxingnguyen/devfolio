@@ -2,18 +2,18 @@ import 'package:folio/utils/utils.dart';
 
 class WorkUtils {
   static const List<String> logos = [
+    StaticUtils.gmoRun,
+    StaticUtils.tmhTechlab,
     StaticUtils.university,
-    StaticUtils.fullterIsb,
-    StaticUtils.dsc,
-    StaticUtils.sastaticket,
+    StaticUtils.gdgHanoi,
   ];
 
   static const List<String> communityLinks = [
-    "https://www.comsats.edu.pk/",
-    "https://web.facebook.com/FlutterIslamabadPakistan/",
-    "https://dsc.community.dev/comsats-university-islamabad/",
-    "https://sastaticket.pk/"
+    'https://runsystem.net/vi/',
+    'http://www.tmh-techlab.vn/?lang=vn',
+    'https://hust.edu.vn/',
+    'https://gdg.community.dev/gdg-ha-noi/',
   ];
 
-  static const List<double> communityLogoHeight = [60.0, 70.0, 30.0, 70.0];
+  static const List<double> communityLogoHeight = [90, 90, 30, 90];
 }

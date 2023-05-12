@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:folio/configs/configs.dart';
-import 'package:folio/constants.dart';
 import 'package:folio/utils/project_utils.dart';
 import 'package:folio/utils/utils.dart';
 import 'package:folio/widget/custom_text_heading.dart';

@@ -21,16 +21,16 @@ class StaticUtils {
   static const String avatar = 'assets/photos/avatar.png';
 
   // work
-  static const String dsc = 'assets/work/dsc.png';
-  static const String sastaticket = 'assets/work/st.png';
-  static const String university = 'assets/work/cui.png';
-  static const String fullterIsb = 'assets/work/flutterIsl.png';
+  static const String gmoRun = 'assets/work/gmo.png';
+  static const String tmhTechlab = 'assets/work/tribal.png';
+  static const String university = 'assets/work/hust.png';
+  static const String gdgHanoi = 'assets/work/gdg.png';
 
   // services
   static const String uiux = 'assets/services/ui.png';
   static const String blog = 'assets/services/blog.png';
   static const String appDev = 'assets/services/app.png';
-  static const String rapid = 'assets/services/rapid.png';
+  static const String desktop = 'assets/services/desktop.png';
   static const String openSource = 'assets/services/open.png';
   static const String openSourceBlack = 'assets/services/open_b.png';
 
@@ -53,9 +53,9 @@ class StaticUtils {
   ];
 
   static const String resume =
-      'https://drive.google.com/file/d/1bDNNrkQtNVJbXcdwMSx0crQQvAF_nMwV/view?usp=sharing';
+      'https://drive.google.com/file/d/1rb-DDterlO8qpb8kWk5QDrKzEyC7aFh4/view?usp=share_link';
 
-  static const String gitHub = 'https://github.com/mhmzdev';
+  static const String gitHub = 'https://github.com/boxingnguyen';
 }
 
 class BodyUtils {
