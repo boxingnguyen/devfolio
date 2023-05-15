@@ -27,8 +27,9 @@ class ProjectUtils {
 
   static const List<String> description = [
     'Application with digital map and booking service to improve experiences in VinWonders playground.',
-    'This app contains chat system with Firebase, Charts... to facilitate communication between the owner and the management company.'
-        'This App enables smooth communication between the resident and the management company.',
+    'This app contains chat system with Firebase, Charts... to facilitate communication between the owner and the management company.',
+    'This app enables smooth communication between the resident and the management company.',
+    'This app helps admin manage easier with features such as chat system, document handler and notification.',
     'It helps traders & partner to confirm reservations for witness days and create troublesome quotations anytime, anywhere from the app.',
   ];
 
