@@ -42,7 +42,7 @@ class Footer extends StatelessWidget with Utils {
                   "Inspired by ",
                 ),
                 InkWell(
-                  onTap: () => openURL("https://github.com/mhmzdev/DevFolio"),
+                  onTap: () => openURL("https://github.com/mhmzdev"),
                   child: const Text(
                     "Hamza ",
                     style: TextStyle(color: Colors.blue),

@@ -53,8 +53,7 @@ class StaticUtils {
   ];
 
   static const String resume =
-      'https://drive.google.com/file/d/1rb-DDterlO8qpb8kWk5QDrKzEyC7aFh4/view?usp=share_link';
-
+      'https://drive.google.com/file/d/1ukgtP6aVNZ9PL-09fhxN9xkm9SrCkz7o/view?usp=sharing';
   static const String gitHub = 'https://github.com/boxingnguyen';
 }
 
