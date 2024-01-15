@@ -12,6 +12,7 @@ class SocialLinks extends StatelessWidget with Utils {
   @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);
+
     return Wrap(
       runSpacing: AppDimensions.normalize(10),
       alignment: WrapAlignment.center,
@@ -22,23 +23,26 @@ class SocialLinks extends StatelessWidget with Utils {
             (e) => Padding(
               padding:
                   Responsive.isMobile(context) ? Space.all(0.2, 0) : Space.h!,
-              child: IconButton(
-                highlightColor: Colors.white54,
-                splashRadius: AppDimensions.normalize(12),
-                icon: Image.network(
-                  e.value,
-                  color: appProvider.isDark ? Colors.white : Colors.black,
-                  height: Responsive.isMobile(context)
+              child: SizedBox(
+                width: 50,
+                child: IconButton(
+                  highlightColor: Colors.white54,
+                  splashRadius: AppDimensions.normalize(12),
+                  icon: Image.network(
+                    e.value,
+                    color: appProvider.isDark ? Colors.white : Colors.black,
+                    height: Responsive.isMobile(context)
+                        ? AppDimensions.normalize(10)
+                        : null,
+                  ),
+                  iconSize: Responsive.isMobile(context)
                       ? AppDimensions.normalize(10)
-                      : null,
+                      : AppDimensions.normalize(15),
+                  onPressed: () => openURL(
+                    StaticUtils.socialLinks[e.key],
+                  ),
+                  hoverColor: AppTheme.c!.primary!,
                 ),
-                iconSize: Responsive.isMobile(context)
-                    ? AppDimensions.normalize(10)
-                    : AppDimensions.normalize(15),
-                onPressed: () => openURL(
-                  StaticUtils.socialLinks[e.key],
-                ),
-                hoverColor: AppTheme.c!.primary!,
               ),
             ),
           )

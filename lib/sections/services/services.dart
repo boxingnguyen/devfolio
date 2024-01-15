@@ -3,7 +3,6 @@ import 'package:flip_card/flip_card.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:folio/configs/configs.dart';
-import 'package:folio/constants.dart';
 import 'package:folio/provider/app_provider.dart';
 import 'package:folio/responsive/responsive.dart';
 import 'package:folio/utils/services_utils.dart';
@@ -14,7 +13,6 @@ import 'package:provider/provider.dart';
 
 part 'services_desktop.dart';
 part 'services_mobile.dart';
-
 part 'widgets/_services_card.dart';
 part 'widgets/_services_card_back.dart';
 

@@ -4,7 +4,6 @@ class ProjectUtils {
     "assets/projects/owner.png",
     "assets/projects/resident.png",
     "assets/projects/admin.png",
-    "assets/projects/partner.png",
   ];
 
   static const List<String> icons = [

@@ -85,6 +85,7 @@ class HomeDesktop extends StatelessWidget {
                     height: 1,
                   ),
                 ),
+                const SizedBox(height: 10),
                 EntranceFader(
                   offset: const Offset(-10, 0),
                   delay: const Duration(seconds: 1),
@@ -103,7 +104,7 @@ class HomeDesktop extends StatelessWidget {
                             textStyle: AppText.b1,
                           ),
                           TyperAnimatedText(
-                            ' PM Enthusiast',
+                            ' Project management Enthusiast',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),
@@ -118,7 +119,7 @@ class HomeDesktop extends StatelessWidget {
                     ],
                   ),
                 ),
-                Space.y2!,
+                Space.y1!,
                 const SocialLinks(),
               ],
             ),
