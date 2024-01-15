@@ -1,8 +1,8 @@
 // Tools & Tech
 final kTools = [
   "Flutter",
-  "Dart",
-  "Python",
-  "Java",
-  "C++",
+  "Swift & SwiftUI",
+  "PHP",
+  "Javascript",
+  "VHDL & Verilog",
 ];
